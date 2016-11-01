@@ -6,7 +6,8 @@
 
 <h2>Dodaj pekaru</h2>
 
-<form>
+@using (Html.BeginForm("Create", "Pekara"))
+{
     <div class="form-group">
         @Html.LabelFor(m => m.NazivPekare, "Naziv pekare")
         @Html.TextBoxFor(m => m.NazivPekare, new { @class = "form-control" })
@@ -18,10 +19,11 @@
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(m=> m.Grad, "Grad")
-        @Html.DropDownListFor(m=>m.Grad, new SelectList(Model.Gradovi, "Id", "NazivGrada"),"", new { @class = "form-control" })
+        @Html.LabelFor(m => m.Grad, "Grad")
+        @Html.DropDownListFor(m => m.Grad, new SelectList(Model.Gradovi, "Id", "NazivGrada"), "", new { @class = "form-control" })
     </div>
 
     <button type="submit" value="Save" class="btn btn-primary">Sacuvaj</button>
+}
 
-</form>
+

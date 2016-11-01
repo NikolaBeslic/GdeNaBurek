@@ -11,7 +11,12 @@ namespace GdeNaBurek.Models
         [StringLength(255)]
         public string NazivPekare { get; set; }
         public string Adresa { get; set; }
+
         public Grad Grad { get; set; }
+
+        [Required]
+        public int GradId { get; set; }
+
 
         public IEnumerable Gradovi { get; set; }
 

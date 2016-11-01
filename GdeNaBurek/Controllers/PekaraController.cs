@@ -14,7 +14,7 @@ namespace GdeNaBurek.Controllers
             _context = new ApplicationDbContext();
         }
 
-        
+        [Authorize] //samo ulogovani korisnici
         public ActionResult Create()
         {
             //vracanje gradova iz baze
@@ -24,6 +24,27 @@ namespace GdeNaBurek.Controllers
             };
 
             return View(ViewModel);
+        }
+
+        //cuvanje pekare u bazi
+        [Authorize]
+        [HttpPost]
+        public ActionResult Create(PekaraFormViewModel viewModel)
+        {
+            //grad je onaj grad iz baze ciji je id jednak onom gradu iz viewModela
+            // zato je "Id" u selectList
+
+            var pekara = new Pekara
+            {
+                NazivPekare = viewModel.NazivPekare,
+                Adresa = viewModel.Adresa,
+                GradId = viewModel.Grad
+            };
+
+            _context.Pekare.Add(pekara);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Home"); //redirekt (akcija, kontroler)
         }
     }
 }
