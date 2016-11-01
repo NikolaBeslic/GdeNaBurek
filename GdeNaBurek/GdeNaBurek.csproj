@@ -205,10 +205,36 @@
     <Compile Include="Migrations\201610311354273_prva migracija.Designer.cs">
       <DependentUpon>201610311354273_prva migracija.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610311415367_dodavanje klasa grad i pekara.cs" />
+    <Compile Include="Migrations\201610311415367_dodavanje klasa grad i pekara.Designer.cs">
+      <DependentUpon>201610311415367_dodavanje klasa grad i pekara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610311441418_burek.cs" />
+    <Compile Include="Migrations\201610311441418_burek.Designer.cs">
+      <DependentUpon>201610311441418_burek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611010753204_ocena.cs" />
+    <Compile Include="Migrations\201611010753204_ocena.Designer.cs">
+      <DependentUpon>201611010753204_ocena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611010807146_prodaja.cs" />
+    <Compile Include="Migrations\201611010807146_prodaja.Designer.cs">
+      <DependentUpon>201611010807146_prodaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611010820423_promena polja.cs" />
+    <Compile Include="Migrations\201611010820423_promena polja.Designer.cs">
+      <DependentUpon>201611010820423_promena polja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Burek.cs" />
+    <Compile Include="Models\Grad.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Ocena.cs" />
+    <Compile Include="Models\Pekara.cs" />
+    <Compile Include="Models\Prodaja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -287,6 +313,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201610311354273_prva migracija.resx">
       <DependentUpon>201610311354273_prva migracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610311415367_dodavanje klasa grad i pekara.resx">
+      <DependentUpon>201610311415367_dodavanje klasa grad i pekara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610311441418_burek.resx">
+      <DependentUpon>201610311441418_burek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611010753204_ocena.resx">
+      <DependentUpon>201611010753204_ocena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611010807146_prodaja.resx">
+      <DependentUpon>201611010807146_prodaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611010820423_promena polja.resx">
+      <DependentUpon>201611010820423_promena polja.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
