@@ -1,19 +1,13 @@
 ﻿using System.Collections;
-using System.ComponentModel.DataAnnotations;
 
-namespace GdeNaBurek.Models
+namespace GdeNaBurek.ViewModels
 {
-    public class Pekara
+    public class PekaraFormViewModel
     {
         public int Id { get; set; }
-
-        [Required]
-        [StringLength(255)]
         public string NazivPekare { get; set; }
         public string Adresa { get; set; }
-        public Grad Grad { get; set; }
-
+        public int Grad { get; set; }
         public IEnumerable Gradovi { get; set; }
-
     }
 }

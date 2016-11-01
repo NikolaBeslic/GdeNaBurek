@@ -9,5 +9,7 @@ namespace GdeNaBurek.Models
         [Required]
         [StringLength(255)]
         public string NazivGrada { get; set; }
+
+
     }
 }
