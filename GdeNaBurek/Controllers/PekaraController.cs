@@ -31,8 +31,11 @@ namespace GdeNaBurek.Controllers
         [HttpPost]
         public ActionResult Create(PekaraFormViewModel viewModel)
         {
-            //grad je onaj grad iz baze ciji je id jednak onom gradu iz viewModela
-            // zato je "Id" u selectList
+            if (!ModelState.IsValid)
+            {
+                viewModel.Gradovi = _context.Gradovi.ToList();
+                return View("Create", viewModel);
+            }
 
             var pekara = new Pekara
             {
