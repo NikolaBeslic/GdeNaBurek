@@ -234,6 +234,10 @@
     <Compile Include="Migrations\201611011021185_dodavanje polja za spoljni kljuc u pekaru.Designer.cs">
       <DependentUpon>201611011021185_dodavanje polja za spoljni kljuc u pekaru.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611021341574_add name to application user.cs" />
+    <Compile Include="Migrations\201611021341574_add name to application user.Designer.cs">
+      <DependentUpon>201611021341574_add name to application user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -345,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611011021185_dodavanje polja za spoljni kljuc u pekaru.resx">
       <DependentUpon>201611011021185_dodavanje polja za spoljni kljuc u pekaru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611021341574_add name to application user.resx">
+      <DependentUpon>201611021341574_add name to application user.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
